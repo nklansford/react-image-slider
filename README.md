@@ -1,3 +1,22 @@
+# React Image Slider
+
+- choose the location of the project in the terminal
+- `npx create-react-app [name of project]`
+- `cd` into new directory
+- `npm start`
+- delete service worker file and import (and below) in `index.js`
+- delete `apps-test.js`
+
+
+
+
+
+
+
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
