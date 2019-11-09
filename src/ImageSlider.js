@@ -1,11 +1,17 @@
 import React from 'react';
 
-function ImageSlider() {
+function ImageSlider(props) {
+  const { images } = props;
   return (
     <div>
-      <h1 className="test">Hello World</h1>
+      <img alt="a happy bork" src={images} />
     </div>
   );
 }
 
 export default ImageSlider;
+
+
+// props {
+//   name: "Noelle"
+// }
