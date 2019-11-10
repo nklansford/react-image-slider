@@ -1,12 +1,12 @@
 import React from 'react';
 import ImageSlider from './ImageSlider';
 import './App.css';
-import Bork from './images/bork.png';
+import data from './data/data';
 
 function App() {
   return (
     <div>
-      <ImageSlider images={[Bork]}/>
+      <ImageSlider images={["winter"]}/>
     </div>
   );
 }

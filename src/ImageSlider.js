@@ -4,7 +4,7 @@ function ImageSlider(props) {
   const { images } = props;
   return (
     <div>
-      <img alt="a happy bork" src={images} />
+      {images};
     </div>
   );
 }
