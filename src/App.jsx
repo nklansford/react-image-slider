@@ -1,13 +1,11 @@
 import React from 'react';
 import ImageSlider from './ImageSlider';
 import './App.css';
-import data from './data/data';
+import data from './data';
 
 function App() {
   return (
-    <div>
-      <ImageSlider images={["winter"]}/>
-    </div>
+    <ImageSlider images={data}/>
   );
 }
 
