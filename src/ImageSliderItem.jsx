@@ -3,8 +3,7 @@ import React from 'react';
 function ImageSliderItem(props) {
   const { src } = props;
   return (
-    <li>
-    <p>This is image</p>
+    <li className="slider_list_item">
     <img alt="" src={src} />
     </li>
   );

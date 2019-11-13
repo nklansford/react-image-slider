@@ -9,9 +9,13 @@ function ImageSlider(props) {
   return (
     <div>
       <h1>Here are a bunch of great photos</h1>
-      <ul>
-      {frames}
-    </ul>
+        <div className="slider">
+          <img className="slider_arrow slider_arrow--previous" alt="show previous" src="./images/previous-arrow.png" />
+          <ul className="slider_list">
+            {frames}
+          </ul>
+          <img className="slider_arrow slider_arrow--next" alt="show next" src="./images/next-arrow.png" />
+      </div>
     </div>
   );
 }
