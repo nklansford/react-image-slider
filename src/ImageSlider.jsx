@@ -44,7 +44,7 @@ class ImageSlider extends React.Component {
     const currentImage = images[currentIndex];
     return (
       <div>
-        <h1>WINTER VIBES</h1>
+        <h1>Let it snow, let it snow</h1>
           <div className="slider">
             <img onClick={this.indexBackward} className="slider_arrow slider_arrow--previous" alt="show previous" src="./images/previous-arrow.png" />
             <ul className="slider_list">
