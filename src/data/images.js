@@ -1,4 +1,4 @@
-const data = [
+export default [
     "./images/bork.png",
     "./images/coffee-mittens.png",
     "./images/snow-bubble.png",
@@ -8,6 +8,4 @@ const data = [
     "./images/snowflake.png",
     "./images/tweet.png",
     "./images/winter-scene.png",
-]
-
-export default data;
+];

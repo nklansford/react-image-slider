@@ -1,12 +1,12 @@
 import React from 'react';
-import ImageSliderItem from './ImageSliderItem';
+import './ImageSlider.css';
 
 class ImageSlider extends React.Component {
   constructor() {
     super();
-      this.state = {
-        currentIndex: 0
-      }
+    this.state = {
+      currentIndex: 0
+    }
   }
 
   indexForward = () => {
@@ -38,28 +38,15 @@ class ImageSlider extends React.Component {
   render() {
     const { images } = this.props;
     const { currentIndex } = this.state;
-    // const frames = images.map(function(image, i){
-    //   return <ImageSliderItem key={i} src={image}/>
-    // });
     const currentImage = images[currentIndex];
     return (
-      <div>
-        <h1>Let it snow, let it snow</h1>
-          <div className="slider">
-            <img onClick={this.indexBackward} className="slider_arrow slider_arrow--previous" alt="show previous" src="./images/previous-arrow.png" />
-            <ul className="slider_list">
-              <ImageSliderItem src={currentImage} />
-            </ul>
-            <img onClick={this.indexForward} className="slider_arrow slider_arrow--next" alt="show next" src="./images/next-arrow.png" />
-        </div>
+      <div className="slider">
+        <img onClick={this.indexBackward} className="slider__arrow slider__arrow--previous" alt="show previous" src="./images/previous-arrow.png" />
+        <img className="slider__image" alt="" src={currentImage} />
+        <img onClick={this.indexForward} className="slider__arrow slider__arrow--next" alt="show next" src="./images/next-arrow.png" />
       </div>
     );
   }
 }
 
 export default ImageSlider;
-
-
-// props {
-//   name: "Noelle"
-// }
