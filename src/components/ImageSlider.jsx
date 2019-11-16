@@ -40,10 +40,10 @@ class ImageSlider extends React.Component {
     const { currentIndex } = this.state;
     const currentImage = images[currentIndex];
     return (
-      <div className="slider">
-        <img onClick={this.indexBackward} className="slider__arrow slider__arrow--previous" alt="show previous" src="./images/icons/previous-arrow.png" />
-        <img className="slider__image" alt="" src={currentImage} />
-        <img onClick={this.indexForward} className="slider__arrow slider__arrow--next" alt="show next" src="./images/icons/next-arrow.png" />
+      <div className="image-slider">
+        <img onClick={this.indexBackward} className="image-slider__arrow" alt="show previous" src="./images/icons/previous-arrow.png" />
+        <img className="image-slider__image" alt="" src={currentImage} />
+        <img onClick={this.indexForward} className="image-slider__arrow" alt="show next" src="./images/icons/next-arrow.png" />
       </div>
     );
   }
