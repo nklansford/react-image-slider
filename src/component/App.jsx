@@ -6,7 +6,7 @@ import data from '../data/images';
 function App() {
   return (
     <>
-      <h1>Let it snow, let it snow</h1>
+      <h1 className="image-slider-title">Let it snow, let it snow</h1>
       <ImageSlider images={data}/>
     </>
   );

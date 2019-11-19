@@ -1,13 +1,13 @@
-.slider {
+.image-slider {
   display: flex;
   flex-flow: row wrap;
   width: 380px;
   justify-content: space-between;
 }
-.slider__arrow{
+.image-slider__arrow{
   display: block;
   align-self: center;
 }
-.slider__image {
+.image-slider__image {
   padding: 0px;
 }
