@@ -4,9 +4,9 @@ import './ImageSlider.css';
 class ImageSlider extends React.Component {
   constructor() {
     super();
-    this.state = {
-      currentIndex: 0
-    }
+      this.state = {
+        currentIndex: 0
+      }
   }
 
   indexForward = () => {
@@ -41,10 +41,11 @@ class ImageSlider extends React.Component {
     const currentImage = images[currentIndex];
     return (
       <div className="image-slider">
-        <img onClick={this.indexBackward} className="image-slider__arrow" alt="show previous" src="./images/icons/previous-arrow.png" />
+        <img onClick={this.indexBackward} className="image-slider__arrow slider__arrow--previous" alt="show previous" src="./images/icons/previous-arrow.png" />
         <img className="image-slider__image" alt="" src={currentImage} />
-        <img onClick={this.indexForward} className="image-slider__arrow" alt="show next" src="./images/icons/next-arrow.png" />
+        <img onClick={this.indexForward} className="image-slider__arrow slider__arrow--next" alt="show next" src="./images/icons/next-arrow.png" />
       </div>
+
     );
   }
 }
